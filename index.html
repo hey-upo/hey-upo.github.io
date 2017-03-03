@@ -2,7 +2,6 @@
 layout: default
 title: My Blog
 ---
-<body style="background-image:url(../_image/background.jpg); background-repeat:repeat-y;">
 <h3>{{ page.title }}</h3>
 <p>Blogs List</p>
 <ul>
@@ -10,4 +9,3 @@ title: My Blog
       <li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
 　　{% endfor %}
 </ul>
-</body>
